@@ -1,0 +1,18 @@
+services:
+  web:
+    image: php:8.2-apache
+    # changer le container_name
+    container_name: php-pokedex-apache
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8000:80"
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
