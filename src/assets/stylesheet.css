@@ -1,0 +1,82 @@
+/* Import d'une police techno depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  background: radial-gradient(circle at top, #ff2e2e 0%, #b30000 100%);
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar style Pokédex */
+.navbar {
+  background-color: #b30000 !important;
+  border-bottom: 4px solid #000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Carte Pokémon façon écran Pokédex */
+.pokedex-card {
+  background-color: #222;
+  border: 4px solid #000;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,255,0,0.4), 0 4px 8px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.pokedex-card img {
+  background-color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.pokedex-card .card-body {
+  background-color: #111;
+  color: #0f0;
+  font-size: 0.9rem;
+}
+
+/* Boutons façon Pokédex */
+.btn-pokedex {
+  background: linear-gradient(to bottom, #ffcc00, #cc9900);
+  border: 2px solid #000;
+  border-radius: 50px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-pokedex:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #000;
+}
+
+/* Badges de type */
+.badge-type {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-type.water { background-color: #3399ff; }
+.badge-type.fire { background-color: #ff6600; }
+.badge-type.grass { background-color: #33cc33; }
+.badge-type.electric { background-color: #ffcc00; color: #000; }
+.badge-type.poison { background-color: #9933cc; }
+.badge-type.flying { background-color: #66ccff; color: #000; }
+.badge-type.normal { background-color: #cccccc; color: #000; }
+.badge-type.psychic { background-color: #ff66cc; }
+.badge-type.ice { background-color: #99ffff; color: #000; }
+.badge-type.rock { background-color: #cc9966; }
+.badge-type.ground { background-color: #cc6600; }
+.badge-type.bug { background-color: #99cc33; }
+.badge-type.ghost { background-color: #6666cc; }
+.badge-type.dragon { background-color: #4b0082; }
