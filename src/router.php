@@ -27,13 +27,18 @@ switch ($page) {
         if ($id) {
             $controller->show($id);
         } else {
-            die("No Pokémon ID provided");
+            http_response_code(400); // Mauvaise requête
+            $errorCode = 400;
+            $errorMessage = "No Pokémon ID provided";
+            require __DIR__ . '/views/error.php';
         }
         break;
 
     default:
         // Page non trouvée
-        http_response_code(404);
-        echo "404 - Page not found";
+        http_response_code(404); // Page non trouvée
+        $errorCode = 404;
+        $errorMessage = "Page not found";
+        require __DIR__ . '/views/error.php';
         break;
 }
